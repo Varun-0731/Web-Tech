@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Object Destructuring</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@300;400;500&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="header-tag">Exercise 02</div>
+      <h1 class="header-title">Object<br>Destructuring<br><span>&amp; Spread</span></h1>
+      <div class="header-sub">ES6 · JavaScript</div>
+    </header>
+
+    <main class="main">
+
+      <section class="panel input-panel">
+        <div class="panel-label">student_object.js</div>
+
+        <div class="fields">
+          <div class="field">
+            <label>id</label>
+            <input type="number" id="fId" value="101"/>
+          </div>
+          <div class="field">
+            <label>name</label>
+            <input type="text" id="fName" value="Priya"/>
+          </div>
+          <div class="field">
+            <label>department</label>
+            <input type="text" id="fDept" value="CSE"/>
+          </div>
+          <div class="field">
+            <label>marks</label>
+            <input type="number" id="fMarks" value="92" min="0" max="100"/>
+          </div>
+        </div>
+
+        <button class="run-btn" id="runBtn">▶ &nbsp;RUN</button>
+      </section>
+
+      <section class="panel code-panel">
+        <div class="panel-label">preview</div>
+        <pre id="codePreview"></pre>
+      </section>
+
+      <section class="panel output-panel">
+        <div class="panel-label">console output</div>
+        <div class="terminal" id="terminal">
+          <div class="t-idle">Click RUN to execute...</div>
+        </div>
+      </section>
+
+      <section class="panel cards-panel" id="cardsPanel">
+        <div class="panel-label">object viewer</div>
+        <div class="obj-grid" id="objGrid"></div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

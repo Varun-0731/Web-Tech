@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Enrollment System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <span class="ex-tag">Exercise 03</span>
+        <h1 class="title">Course<br>Enrollment<br><em>System</em></h1>
+      </div>
+      <div class="concepts">
+        <div class="concept-row"><span class="pill">class</span> ES6 Classes</div>
+        <div class="concept-row"><span class="pill">new</span> Constructor</div>
+        <div class="concept-row"><span class="pill">Promise</span> Async</div>
+        <div class="concept-row"><span class="pill">.then</span> Resolve</div>
+        <div class="concept-row"><span class="pill">.catch</span> Reject</div>
+      </div>
+      <div class="sidebar-foot">ES6 · JavaScript</div>
+    </aside>
+
+    <div class="content">
+
+      <div class="top-row">
+
+        <div class="card form-card">
+          <div class="card-label">course_constructor.js</div>
+          <div class="form-fields">
+            <div class="form-field">
+              <label>courseName</label>
+              <input type="text" id="fCourse" value="Web Technologies"/>
+            </div>
+            <div class="form-field">
+              <label>instructor</label>
+              <input type="text" id="fInstructor" value="Dr. Kumar"/>
+            </div>
+            <div class="form-field">
+              <label>totalSeats</label>
+              <input type="number" id="fSeats" value="30" min="0"/>
+            </div>
+            <div class="form-field">
+              <label>enrolled</label>
+              <input type="number" id="fEnrolled" value="10" min="0"/>
+            </div>
+          </div>
+          <button class="btn-run" id="runBtn">▶ &nbsp;EXECUTE</button>
+        </div>
+
+        <div class="card code-card">
+          <div class="card-label">main.js</div>
+          <pre id="codePreview"></pre>
+        </div>
+
+      </div>
+
+      <div class="card output-card">
+        <div class="card-label">console output</div>
+        <div class="terminal" id="terminal">
+          <span class="idle">Click EXECUTE to run...</span>
+        </div>
+      </div>
+
+      <div class="card status-card" id="statusCard">
+        <div class="card-label">enrollment status</div>
+        <div class="status-body" id="statusBody">
+          <div class="status-idle">Run the program to see enrollment status</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

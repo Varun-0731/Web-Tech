@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Marks Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="wrapper">
+
+  
+  <div class="header">
+    <div class="header-left">
+      <div class="label">Exercise 01 · ES6 Features</div>
+      <h1>Student Marks<br>Calculator</h1>
+    </div>
+    <div class="badge">JavaScript · ES6</div>
+  </div>
+
+  <div class="grid">
+
+    
+    <div class="card">
+      <div class="card-label">// student_input</div>
+      <div class="input-group">
+        <div class="input-row">
+          <span>name</span>
+          <input type="text" id="name" value="Arun" placeholder="Student name"/>
+        </div>
+        <div class="input-row">
+          <span>mark_1</span>
+          <input type="number" id="m1" value="85" min="0" max="100"/>
+        </div>
+        <div class="input-row">
+          <span>mark_2</span>
+          <input type="number" id="m2" value="90" min="0" max="100"/>
+        </div>
+        <div class="input-row">
+          <span>mark_3</span>
+          <input type="number" id="m3" value="88" min="0" max="100"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- ES6 Concepts -->
+    <div class="card">
+      <div class="card-label">// es6_concepts</div>
+      <div class="concepts">
+        <div class="concept-item">
+          <div class="dot"></div>
+          <span>let / const declarations</span>
+        </div>
+        <div class="concept-item">
+          <div class="dot"></div>
+          <span>Arrow functions ( ⇒ )</span>
+        </div>
+        <div class="concept-item">
+          <div class="dot"></div>
+          <span>Template literals ( ` )</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="code-card">
+      <div class="code-header">
+        <div class="dots">
+          <div class="dot-btn"></div>
+          <div class="dot-btn"></div>
+          <div class="dot-btn"></div>
+        </div>
+        <span>main.js</span>
+        <span>ES6</span>
+      </div>
+      <pre id="codeBlock"></pre>
+    </div>
+
+    
+    <div class="output-card">
+      <div class="output-header">
+        <div class="card-label" style="margin-bottom:0">// console_output</div>
+        <button class="run-btn" onclick="runCode()">▶ RUN</button>
+      </div>
+      <div class="terminal" id="terminal">
+        <div class="line" id="l0">
+          <span class="prompt">$</span>
+          <span class="muted-text">Click RUN to execute...</span>
+        </div>
+        <div class="line" id="l1">
+          <span class="prompt">›</span>
+          <span class="out">Student Name  : <span class="highlight" id="outName"></span></span>
+        </div>
+        <div class="line" id="l2">
+          <span class="prompt">›</span>
+          <span class="out">Total Marks   : <span class="highlight" id="outTotal"></span></span>
+        </div>
+        <div class="line" id="l3">
+          <span class="prompt">›</span>
+          <span class="out">Average Marks : <span class="highlight" id="outAvg"></span></span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="stats">
+      <div class="stat-box">
+        <div class="stat-title">Total Marks</div>
+        <div class="stat-value" id="statTotal">—</div>
+        <div class="stat-unit">out of 300</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-title">Average</div>
+        <div class="stat-value" id="statAvg">—</div>
+        <div class="stat-unit">per subject</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-title">Grade</div>
+        <div class="stat-value" id="statGrade">—</div>
+        <div class="stat-unit">performance</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
