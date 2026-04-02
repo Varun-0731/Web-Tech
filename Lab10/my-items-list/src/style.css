@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin: 0;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #000000;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #000000;
+  outline: none;
+}
+
+input:focus {
+  border-width: 2px;
+}
+
+button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #000000;
+  margin-bottom: 10px;
+}
+
+.item button {
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+
+.empty-message {
+  text-align: center;
+  color: #666666;
+  font-style: italic;
+  border: 1px dashed #000000;
+  padding: 20px;
+}

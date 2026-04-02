@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.status-message {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px dashed #000000;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.error {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.data-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.data-card {
+  border: 2px solid #000000;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.data-card:hover {
+  transform: translateX(5px);
+  box-shadow: -5px 5px 0px #000000;
+}
+
+.data-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.data-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.data-card strong {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+}
